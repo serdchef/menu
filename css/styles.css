@@ -1,0 +1,113 @@
+/* Component & layout styles. Color variables and resets are in base.css */
+
+.site-header{
+  position:sticky;top:0;z-index:30;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 16px;backdrop-filter: blur(6px);
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{display:flex;align-items:center}
+.logo-img{height:44px;width:auto;display:block;border-radius:6px}
+.subtitle{font-size:12px;color:var(--muted)}
+.category{font-size:13px;color:var(--muted)}
+
+main{padding:12px;position:relative;z-index:10}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr); /* 2 sütun mobilde */
+  gap:10px;
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  border-radius:12px;
+  overflow:hidden;
+  border:2px solid rgba(185,145,64,0.06);
+  transition:transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  touch-action: manipulation;
+  position:relative;
+  will-change:transform,opacity;
+  opacity:0;
+  transform:translateY(8px) scale(1);
+  animation-name: fadeUp;
+  animation-duration: var(--anim-medium);
+  animation-fill-mode: both;
+}
+.card:active{transform:scale(0.995)}
+.card:hover{box-shadow:0 6px 18px rgba(0,0,0,0.45);border-color:var(--gold)}
+.card-img{width:100%;height:110px;object-fit:cover;display:block}
+.card-img{transition:transform var(--anim-medium) ease}
+.card:hover .card-img{transform:scale(1.06)}
+.card-body{padding:10px}
+.title{font-size:14px;font-weight:600;color:var(--cream);margin:0 0 6px}
+.price{font-weight:700;color:var(--gold);font-size:15px}
+
+.badges{margin-top:6px;display:flex;gap:6px}
+.badge{background:rgba(255,255,255,0.04);padding:4px 8px;border-radius:999px;font-size:11px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+
+/* sheen effect */
+.card::after{content:"";position:absolute;top:0;left:0;right:0;height:100%;pointer-events:none;opacity:0;transform:translateX(-120%) rotate(12deg);background:linear-gradient(90deg,transparent, rgba(184,145,64,0.14), transparent);transition:transform var(--anim-medium) ease,opacity var(--anim-medium) ease}
+.card:hover::after{opacity:1;transform:translateX(120%) rotate(12deg)}
+
+/* animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes popIn{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:scale(1)}}
+
+.badge{animation-name:popIn;animation-duration:var(--anim-fast);animation-fill-mode:both}
+
+/* Modal / bottom sheet */
+.modal{position:fixed;inset:0;display:flex;align-items:flex-end;justify-content:center;pointer-events:none}
+.modal[aria-hidden="false"]{pointer-events:auto}
+.modal::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,0.55);opacity:0;transition:opacity var(--anim-medium) ease}
+.modal[aria-hidden="false"]::before{opacity:1}
+.modal-sheet{width:100%;max-width:780px;background:linear-gradient(180deg,var(--panel), #07332a);border-top-left-radius:16px;border-top-right-radius:16px;transform:translateY(12px);opacity:0;transition:transform var(--anim-medium) cubic-bezier(.2,.9,.2,1),opacity var(--anim-medium);box-shadow:0 -12px 40px rgba(0,0,0,0.6);}
+.modal[aria-hidden="false"] .modal-sheet{transform:translateY(0);opacity:1}
+.modal-content{display:flex;flex-direction:column;padding:14px}
+.modal-image img{width:100%;height:220px;object-fit:cover;border-radius:10px}
+.modal-info{padding-top:10px}
+.modal-close{position:absolute;right:18px;top:8px;background:transparent;border:0;color:var(--muted);font-size:20px;padding:8px}
+
+.modal .price{font-size:18px}
+.modal .desc{color:var(--muted);line-height:1.4}
+.modal-actions{margin-top:12px}
+.primary{background:var(--gold);color:#07271a;border:0;padding:12px 16px;border-radius:10px;font-weight:700;width:100%}
+
+/* button micro interaction */
+.primary:active{transform:translateY(1px)}
+
+/* Large touch targets */
+button, .card{min-height:48px}
+
+@media(min-width:700px){
+  .product-grid{grid-template-columns:repeat(3,1fr)}
+  .modal-content{flex-direction:row;gap:16px}
+  .modal-image img{height:320px;width:50%}
+  .modal-info{width:50%}
+}
+
+/* subtle ornament - thin frame */
+body:before{content:"";position:fixed;inset:0;pointer-events:none;border:8px solid rgba(185,145,64,0.02);box-shadow:inset 0 0 0 1px rgba(255,255,255,0.01)}
+
+/* Decorative repeating pattern overlay using provided image */
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0; /* behind the main UI (main has z-index:10) */
+  background-image: url('../img/Adsız tasarım (9).png');
+  background-repeat: repeat;
+  background-position: center;
+  /* small tile size => many repeats */
+  background-size: 36px 36px;
+  opacity: var(--pattern-opacity);
+  mix-blend-mode: overlay;
+  filter: grayscale(80%) blur(0.2px) contrast(90%);
+}
+
+/* Optional denser layer rotated for symmetric richness */
+body::before{ /* keep existing frame but ensure pattern depth with extra rotated layer */
+  /* existing frame rules are preserved earlier; this extra decorative layer would require different pseudo element, so add a subtle rotated pattern using a pseudo element on .site-header as ornament if needed */
+}

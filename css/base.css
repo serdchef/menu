@@ -1,0 +1,21 @@
+:root{
+  --bg: #0b3b30; /* koyu zümrüt */
+  --panel: #0f4c3f;
+  --gold: #b89140; /* mat altın */
+  --cream: #f6efe6; /* açık krem */
+  --muted: rgba(246,239,230,0.85);
+  --anim-fast: 160ms;
+  --anim-medium: 280ms;
+  --anim-slow: 420ms;
+  --pattern-opacity: 0.06;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg,var(--bg), #083229);
+  color:var(--cream);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
