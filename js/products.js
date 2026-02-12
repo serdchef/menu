@@ -15,7 +15,7 @@ window.products = [
   { id:13, name: "Kuru Baklava", price: "1.500,00 ₺", img: "img/kuru_baklava.jpg", desc: "Şerbetsiz, gevrek dokuda klasik kuru baklava.", meta: "240g", badges: [] },
   { id:14, name: "Özel Kuru Baklava", price: "1.700,00 ₺", img: "img/ozel_kuru_baklava.jpg", desc: "Kuruyemiş karışımı ile zenginleştirilmiş kuru baklava.", meta: "260g", badges: ["Özel ürün"] },
   { id:15, name: "Karışık", price: "1.800,00 ₺", img: "img/karisik.jpg", desc: "Çeşitli baklava türlerinden hazırlanmış karışık kutu.", meta: "700g", badges: ["Hediyelik"] },
-  { id:16, name: "Özel Karışık", price: "1.950,00 ₺", img: "img/ozel_karisik.jpg", desc: "Seçkin parçalarla hazırlanmış özel karışım.", meta: "700g", badges: ["Özel ürün"] },
+  { id:16, name: "Özel Karışık", price: "1.950,00 ₺", img: "img/ozel_karisik2.jpg", desc: "Seçkin parçalarla hazırlanmış özel karışım.", meta: "700g", badges: ["Özel ürün"] },
   { id:17, name: "Sade Kurabiye", price: "1.200,00 ₺", img: "img/sade_kurabiye.jpg", desc: "Ev yapımı sade kurabiye, hafif tereyağlı.", meta: "400g", badges: [] },
   { id:18, name: "Fıstıklı Kurabiye", price: "1.800,00 ₺", img: "img/fistikli_kurabiye.jpg", desc: "İçinde bol antep fıstığı bulunan çıtır kurabiye.", meta: "420g", badges: ["Günlük üretim"] },
   { id:19, name: "Su Böreği", price: "1.050,00 ₺", img: "img/su_boregi.jpg", desc: "Klasik su böreği, ince yufka ve hafif tuzlu lezzet.", meta: "350g", badges: ["Tuzlu"] },
