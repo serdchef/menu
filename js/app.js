@@ -82,7 +82,7 @@ function openModal(p){
   primaryBtn.textContent = '📞 Sipariş Ver';
   primaryBtn.onclick = () => {
     const message = `Merhaba, ${p.name} siparişi vermek istiyorum. Fiyat: ${p.price}`;
-    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/905325231136?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
   
