@@ -2,17 +2,26 @@
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Baklava & Tatlı - Dijital Menü</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="theme-color" content="#0b3b30" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Coşkun Yaycı | Premium Baklava & Tatlı</title>
+    <meta name="description" content="Coşkun Yaycı - Günlük üretim, Osmanlı esintili premium baklava ve tatlı çeşitleri. Online sipariş için menümüzü inceleyin." />
+    <meta property="og:title" content="Coşkun Yaycı | Dijital Menü" />
+    <meta property="og:description" content="Premium baklava ve tatlı çeşitleri - Günlük üretim" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <meta name="description" content="Premium baklava ve tatlıcı dijital menü - mobil öncelikli" />
+    <link rel="icon" type="image/png" href="img/dp.png" />
   </head>
   <body>
     <header class="site-header">
       <div class="brand">
         <div class="logo">
-          <img src="img/dp.png" alt="Logo" class="logo-img">
+          <img src="img/dp.png" alt="Coşkun Yaycı Logo" class="logo-img" loading="eager">
         </div>
         <div class="subtitle">Günlük üretim • Osmanlı esintili</div>
       </div>
@@ -20,14 +29,18 @@
     </header>
 
     <main>
-      <section class="product-grid" id="productGrid" aria-live="polite"></section>
+      <section class="product-grid" id="productGrid" aria-live="polite">
+        <div class="loading">Ürünler yükleniyor...</div>
+      </section>
     </main>
 
-    <div id="productModal" class="modal" aria-hidden="true">
-      <div class="modal-sheet" role="dialog" aria-modal="true">
+    <div id="productModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-sheet">
         <button class="modal-close" id="modalClose" aria-label="Kapat">✕</button>
         <div class="modal-content">
-          <div class="modal-image"><img id="modalImg" src="img/placeholder.jpg" alt="" loading="lazy"></div>
+          <div class="modal-image">
+            <img id="modalImg" src="img/pattern.png" alt="" loading="lazy">
+          </div>
           <div class="modal-info">
             <h2 id="modalTitle"></h2>
             <div class="price" id="modalPrice"></div>
@@ -35,7 +48,8 @@
             <p class="desc" id="modalDesc"></p>
             <div class="meta" id="modalMeta"></div>
             <div class="modal-actions">
-              <button class="primary">Sipariş</button>
+              <button class="primary">Sipariş Ver</button>
+              <button class="secondary" id="modalCloseBtn">Kapat</button>
             </div>
           </div>
         </div>
