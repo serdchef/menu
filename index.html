@@ -449,6 +449,21 @@
     
     <!-- Service Worker Registration -->
     <script>
+      // Eski cache'leri temizle
+      if ('caches' in window) {
+        caches.keys().then(cacheNames => {
+          cacheNames.forEach(cacheName => {
+            if (cacheName.includes('coskun-yayci-v1') || 
+                cacheName.includes('static-v1') || 
+                cacheName.includes('images-v1')) {
+              caches.delete(cacheName);
+              console.log('🗑️ Eski cache silindi:', cacheName);
+            }
+          });
+        });
+      }
+      
+      // Service Worker'ı kaydet
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
           navigator.serviceWorker.register('/sw.js')
