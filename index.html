@@ -2,44 +2,321 @@
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" />
     <meta name="theme-color" content="#0b3b30" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <title>Coşkun Yaycı | Premium Baklava & Tatlı</title>
-    <meta name="description" content="Coşkun Yaycı - Günlük üretim, Osmanlı esintili premium baklava ve tatlı çeşitleri. Online sipariş için menümüzü inceleyin." />
-    <meta property="og:title" content="Coşkun Yaycı | Dijital Menü" />
-    <meta property="og:description" content="Premium baklava ve tatlı çeşitleri - Günlük üretim" />
+    <meta name="apple-mobile-web-app-title" content="Yaycı Menü" />
+    <meta name="application-name" content="Coşkun Yaycı" />
+    <meta name="msapplication-TileColor" content="#0b3b30" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Coşkun Yaycı | Premium Baklava & Tatlı Menüsü</title>
+    <meta name="description" content="Coşkun Yaycı - Günlük üretim, Osmanlı esintili premium baklava ve tatlı çeşitleri. Online sipariş için menümüzü inceleyin. Antep fıstığı, kaymaklı tatlılar ve daha fazlası." />
+    <meta name="keywords" content="baklava, tatlı, antep fıstığı, şöbiyet, kadayıf, Gaziantep, online sipariş, kuru baklava, mekik baklava" />
+    <meta name="author" content="Coşkun Yaycı" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://coskunyaycibaklava.com/" />
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://coskunyaycibaklava.com/" />
+    <meta property="og:title" content="Coşkun Yaycı | Premium Baklava & Tatlı Menüsü" />
+    <meta property="og:description" content="Günlük üretim, Osmanlı esintili premium baklava ve tatlı çeşitleri. Online sipariş için menümüzü inceleyin." />
+    <meta property="og:image" content="https://coskunyaycibaklava.com/img/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Coşkun Yaycı" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://coskunyaycibaklava.com/" />
+    <meta name="twitter:title" content="Coşkun Yaycı | Premium Baklava & Tatlı" />
+    <meta name="twitter:description" content="Günlük üretim, Osmanlı esintili premium baklava ve tatlı çeşitleri." />
+    <meta name="twitter:image" content="https://coskunyaycibaklava.com/img/og-image.jpg" />
+    
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="img/dp.png" />
+    <link rel="apple-touch-icon" href="img/dp.png" />
+    <link rel="mask-icon" href="img/dp.png" color="#0b3b30" />
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/png" href="img/dp.png" />
+    
+    <!-- Critical CSS Inline -->
+    <style>
+      /* Critical render path CSS */
+      .site-header{background:rgba(11,59,48,0.9);backdrop-filter:blur(12px)}
+      .loading{display:flex;align-items:center;justify-content:center;height:200px;color:rgba(246,239,230,0.85)}
+      .loading::after{content:"";width:30px;height:30px;border:2px solid rgba(184,145,64,0.3);border-top-color:#b89140;border-radius:50%;animation:spin 1s linear infinite;margin-left:12px}
+      @keyframes spin{to{transform:rotate(360deg)}}
+    </style>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Coşkun Yaycı Premium Baklava",
+      "description": "Günlük üretim, Osmanlı esintili premium baklava ve tatlı çeşitleri",
+      "url": "https://coskunyaycibaklava.com",
+      "logo": "https://coskunyaycibaklava.com/img/dp.png",
+      "image": "https://coskunyaycibaklava.com/img/og-image.jpg",
+      "telephone": "+90-532-523-1136",
+      "email": "info@coskunyaycibaklava.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "TR",
+        "addressLocality": "Gaziantep"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "37.0662",
+        "longitude": "37.3833"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "08:00",
+          "closes": "20:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Baklava ve Tatlı Çeşitleri",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Tüm Baklavalar",
+              "description": "Odun ateşinde pişirilmiş, glikoz içermeyen doğal baklavalar"
+            }
+          }
+        ]
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Pişirme Yöntemi",
+          "value": "Odun Ateşi"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Glikoz",
+          "value": "İçermez"
+        }
+      ],
+      "priceRange": "₺₺₺",
+      "servesCuisine": ["Türk Mutfağı", "Tatlı", "Baklava"],
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "TRY"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "TR",
+          "addressRegion": ["İstanbul", "Ankara", "İzmir"]
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 1,
+            "unitCode": "d"
+          }
+        }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Baklava ve Tatlı Çeşitleri",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "Mekik Baklava",
+              "description": "Geleneksel açma tekniğiyle hazırlanmış baklava",
+              "image": "img/mekik_baklava.jpg",
+              "offers": {
+                "@type": "Offer",
+                "price": "1450.00",
+                "priceCurrency": "TRY",
+                "availability": "https://schema.org/InStock"
+              }
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+    
+    <!-- Product Schema for each product will be added dynamically -->
+    <script type="application/ld+json" id="product-schema">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": []
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Siparişlerinizin teslimat süresi nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Siparişleriniz aynı gün içerisinde hazırlanır ve en kısa sürede teslim edilir. Özel günlerde yoğunluğa göre süre değişebilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ürünlerinizin raf ömrü nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ürünlerimiz günlük taze üretimdir. Serin ve kuru ortamda muhafaza edildiğinde 5-7 gün dayanır. Soğuk baklavalar 10 güne kadar saklanabilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Alerjen bilgisi alabilir miyim?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tüm ürünlerimizde gluten, süt ürünleri, kuruyemiş ve yumurta bulunabilir. Detaylı alerjen bilgisi her ürün sayfasında mevcuttur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ürünlerinizde glikoz var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır, ürünlerimizde glikoz şurubu kullanılmamaktadır. Sadece doğal şeker kullanıyoruz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pişirme yönteminiz nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tüm baklavalarımız geleneksel yöntemle odun ateşinde pişirilmektedir. Bu sayede eşsiz aroma ve lezzet elde ediyoruz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kargo süreniz nedir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "İstanbul, Ankara ve İzmir için 24 saat içinde kapınıza teslimat yapıyoruz. Diğer iller için 1-2 gün içinde kargoya veriyoruz."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana Sayfa",
+          "item": "https://coskunyaycibaklava.com/"
+        }
+      ]
+    }
+    </script>
   </head>
+  
   <body>
-    <header class="site-header">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
+    
+    <!-- Header -->
+    <header class="site-header" role="banner">
       <div class="brand">
         <div class="logo">
-          <img src="img/dp.png" alt="Coşkun Yaycı Logo" class="logo-img" loading="eager">
+          <img src="img/dp.png" alt="Coşkun Yaycı Logo" class="logo-img" loading="eager" width="44" height="44">
         </div>
-        <div class="subtitle">Günlük üretim • Osmanlı esintili</div>
+        <div>
+          <h1 style="font-size:18px;margin:0;font-weight:700">Coşkun Yaycı</h1>
+          <div class="subtitle">Günlük üretim • Osmanlı esintili</div>
+        </div>
       </div>
       <div class="category" id="category">Tüm Ürünler</div>
     </header>
-
-    <main>
-      <section class="product-grid" id="productGrid" aria-live="polite">
-        <div class="loading">Ürünler yükleniyor...</div>
+    
+    <!-- Features Bar -->
+    <div class="features-bar" role="complementary" aria-label="Özelliklerimiz">
+      <div class="feature-item">
+        <span class="feature-icon">🔥</span>
+        <span class="feature-text">Odun Ateşinde</span>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-item">
+        <span class="feature-icon">🚫</span>
+        <span class="feature-text">Glikoz İçermez</span>
+      </div>
+      <div class="feature-divider"></div>
+      <div class="feature-item">
+        <span class="feature-icon">🚚</span>
+        <span class="feature-text">İstanbul/Ankara/İzmir'e 24 Saat</span>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+      <!-- Loading State -->
+      <section class="product-grid" id="productGrid" aria-live="polite" aria-busy="true">
+        <div class="loading" role="status">
+          <span>Ürünler yükleniyor...</span>
+        </div>
       </section>
     </main>
-
+    
+    <!-- Product Modal -->
     <div id="productModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-overlay"></div>
       <div class="modal-sheet">
-        <button class="modal-close" id="modalClose" aria-label="Kapat">✕</button>
+        <button class="modal-close" id="modalClose" aria-label="Ürün detayını kapat">✕</button>
         <div class="modal-content">
           <div class="modal-image">
-            <img id="modalImg" src="img/pattern.png" alt="" loading="lazy">
+            <img id="modalImg" src="img/pattern.png" alt="" loading="lazy" width="600" height="400">
           </div>
           <div class="modal-info">
             <h2 id="modalTitle"></h2>
@@ -47,16 +324,194 @@
             <div class="badges" id="modalBadges"></div>
             <p class="desc" id="modalDesc"></p>
             <div class="meta" id="modalMeta"></div>
+            
+            <!-- Nutrition Info -->
+            <div class="product-details" id="nutritionInfo" style="display:none;">
+              <h4>📊 Besin Değerleri (100g)</h4>
+              <div class="nutrition-grid" id="nutritionGrid"></div>
+            </div>
+            
+            <!-- Allergens -->
+            <div class="allergens" id="allergenInfo" style="display:none;">
+              <h4>⚠️ Alerjen Uyarısı</h4>
+              <div class="allergen-tags" id="allergenTags"></div>
+            </div>
+            
+            <!-- Quantity Selector -->
+            <div class="quantity-selector">
+              <button class="qty-btn" id="qtyMinus" aria-label="Miktarı azalt">−</button>
+              <span class="qty-value" id="qtyValue">1</span>
+              <button class="qty-btn" id="qtyPlus" aria-label="Miktarı artır">+</button>
+            </div>
+            
             <div class="modal-actions">
-              <button class="primary">Sipariş Ver</button>
+              <button class="primary" id="addToCartBtn">
+                🛒 Sepete Ekle
+              </button>
               <button class="secondary" id="modalCloseBtn">Kapat</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
+    
+    <!-- Floating Action Buttons -->
+    <div class="fab-container" role="complementary" aria-label="Hızlı erişim">
+      <button class="fab fab-favorites" id="fabFavorites" aria-label="Favorilerimi göster">
+        ❤️
+        <span class="cart-badge" id="favCount" style="display:none;">0</span>
+      </button>
+      <button class="fab fab-cart" id="fabCart" aria-label="Sepetimi göster">
+        🛒
+        <span class="cart-badge" id="cartCount" style="display:none;">0</span>
+      </button>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <!-- Öne Çıkan Özellikler -->
+      <div class="highlights-section">
+        <h3>🌟 Neden Coşkun Yaycı?</h3>
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon">🔥</div>
+            <h4>Odun Ateşinde Pişirme</h4>
+            <p>Geleneksel yöntemle odun ateşinde pişirilen baklavalarımız, otantik lezzeti ve eşsiz aromayı korur.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🚫</div>
+            <h4>Glikoz İçermez</h4>
+            <p>Doğal şeker kullanılan ürünlerimizde glikoz şurubu yoktur. Sağlıklı ve katkısız tatlı keyfi.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🚚</div>
+            <h4>24 Saatte Kapınızda</h4>
+            <p>İstanbul, Ankara ve İzmir için siparişleriniz 24 saat içinde kapınıza teslim edilir.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">📅</div>
+            <h4>Günlük Taze Üretim</h4>
+            <p>Her gün sabah erken saatlerde üretilen taze baklavalar, aynı gün kargoya verilir.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-sections">
+        <div class="footer-section">
+          <h4>📍 İletişim</h4>
+          <p>📞 <a href="tel:+905325231136">0532 523 11 36</a></p>
+          <p>📱 <a href="https://wa.me/905325231136" target="_blank" rel="noopener">WhatsApp</a></p>
+          <p>📧 info@coskunyaycibaklava.com</p>
+        </div>
+        <div class="footer-section">
+          <h4>⏰ Çalışma Saatleri</h4>
+          <p>Pazartesi - Cumartesi</p>
+          <p>08:00 - 20:00</p>
+          <p style="color:var(--muted);font-size:12px">Pazar: Kapalı</p>
+        </div>
+        <div class="footer-section">
+          <h4>🚚 Kargo Bilgisi</h4>
+          <p>İstanbul: 24 Saat</p>
+          <p>Ankara: 24 Saat</p>
+          <p>İzmir: 24 Saat</p>
+          <p style="color:var(--muted);font-size:12px">Diğer iller: 1-2 gün</p>
+        </div>
+        <div class="footer-section">
+          <h4>🔗 Hızlı Linkler</h4>
+          <a href="#" onclick="Filters.setFilter('all'); return false;">Tüm Ürünler</a>
+          <a href="#" onclick="Filters.setFilter('ozel'); return false;">Özel Ürünler</a>
+          <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Yukarı Çık</a>
+        </div>
+      </div>
+      
+      <!-- Güven Rozetleri -->
+      <div class="trust-badges">
+        <span class="trust-badge">🔥 Odun Ateşi</span>
+        <span class="trust-badge">🚫 Glikozsuz</span>
+        <span class="trust-badge">🚚 24 Saat Kargo</span>
+        <span class="trust-badge">📅 Günlük Üretim</span>
+      </div>
+      
+      <p>&copy; 2026 Coşkun Yaycı Premium Baklava. Tüm hakları saklıdır.</p>
+      <p style="margin-top:8px;font-size:11px;color:rgba(246,239,230,0.5)">
+        Tüm ürünlerimiz doğal içerikli ve katkısızdır.
+      </p>
+    </footer>
+    
+    <!-- Scripts - Deferred Loading -->
     <script src="js/products.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/favorites.js" defer></script>
+    <script src="js/search.js" defer></script>
+    <script src="js/filters.js" defer></script>
+    <script src="js/analytics.js" defer></script>
     <script src="js/app.js" defer></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then(registration => {
+              console.log('✅ Service Worker registered:', registration.scope);
+            })
+            .catch(error => {
+              console.log('❌ Service Worker registration failed:', error);
+            });
+        });
+      }
+    </script>
+    
+    <!-- Schema.org Product Data Population -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Populate product schema when products are loaded
+        const checkProducts = setInterval(() => {
+          if (window.products && window.products.length > 0) {
+            clearInterval(checkProducts);
+            populateProductSchema();
+          }
+        }, 100);
+        
+        function populateProductSchema() {
+          const schemaData = {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": window.products.map((product, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": {
+                "@type": "Product",
+                "name": product.name,
+                "description": product.desc,
+                "image": `https://coskunyaycibaklava.com/${product.img}`,
+                "sku": `CY-${String(product.id).padStart(3, '0')}`,
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Coşkun Yaycı"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://coskunyaycibaklava.com/",
+                  "price": product.price.replace(/[^0-9,]/g, '').replace(',', '.'),
+                  "priceCurrency": "TRY",
+                  "priceValidUntil": "2026-12-31",
+                  "availability": "https://schema.org/InStock",
+                  "seller": {
+                    "@type": "LocalBusiness",
+                    "name": "Coşkun Yaycı"
+                  }
+                }
+              }
+            }))
+          };
+          
+          const schemaScript = document.getElementById('product-schema');
+          if (schemaScript) {
+            schemaScript.textContent = JSON.stringify(schemaData);
+          }
+        }
+      });
+    </script>
   </body>
 </html>

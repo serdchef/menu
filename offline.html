@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#0b3b30" />
+    <title>Çevrimdışı - Coşkun Yaycı</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <style>
+      .offline-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+      .offline-icon {
+        font-size: 64px;
+        margin-bottom: 20px;
+      }
+      .offline-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--cream);
+        margin-bottom: 12px;
+      }
+      .offline-message {
+        font-size: 16px;
+        color: var(--muted);
+        margin-bottom: 24px;
+        max-width: 300px;
+        line-height: 1.5;
+      }
+      .retry-btn {
+        background: var(--gold);
+        color: #07271a;
+        border: 0;
+        padding: 14px 28px;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .retry-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(184,145,64,0.4);
+      }
+      .cached-products {
+        margin-top: 32px;
+        padding: 20px;
+        background: rgba(255,255,255,0.03);
+        border-radius: 12px;
+        max-width: 400px;
+        width: 100%;
+      }
+      .cached-title {
+        font-size: 14px;
+        color: var(--gold);
+        margin-bottom: 12px;
+      }
+      .cached-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+      }
+      .cached-list li {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        color: var(--cream);
+        font-size: 14px;
+      }
+      .cached-list li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="offline-container">
+      <div class="offline-icon">📡</div>
+      <h1 class="offline-title">İnternet Bağlantısı Yok</h1>
+      <p class="offline-message">
+        Şu anda çevrimdışı görünüyorsunuz. Daha önce ziyaret ettiğiniz ürünleri görüntüleyebilirsiniz.
+      </p>
+      <button class="retry-btn" onclick="location.reload()">
+        🔄 Yeniden Dene
+      </button>
+      
+      <div class="cached-products" id="cachedProducts" style="display:none;">
+        <div class="cached-title">💾 Önbellekteki Ürünler</div>
+        <ul class="cached-list" id="productList"></ul>
+      </div>
+    </div>
+
+    <script>
+      // Check for cached products
+      if ('caches' in window) {
+        caches.match('/js/products.js').then(response => {
+          if (response) {
+            document.getElementById('cachedProducts').style.display = 'block';
+            // List some products from localStorage if available
+            const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+            const list = document.getElementById('productList');
+            if (favorites.length > 0) {
+              favorites.slice(0, 5).forEach(product => {
+                const li = document.createElement('li');
+                li.textContent = '🧁 ' + product;
+                list.appendChild(li);
+              });
+            } else {
+              list.innerHTML = '<li>Önceden görüntülenen ürünler burada görünecek</li>';
+            }
+          }
+        });
+      }
+
+      // Auto-retry when online
+      window.addEventListener('online', () => {
+        location.reload();
+      });
+    </script>
+  </body>
+</html>

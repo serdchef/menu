@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://coskunyaycibaklava.com/sitemap.xml
+
+# Disallow admin areas if exist
+Disallow: /admin/
+Disallow: /api/
+
+# Crawl-delay for bots
+Crawl-delay: 1
