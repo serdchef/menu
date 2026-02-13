@@ -1,6 +1,6 @@
-const CACHE_NAME = 'coskun-yayci-v1';
-const STATIC_CACHE = 'static-v1';
-const IMAGE_CACHE = 'images-v1';
+const CACHE_NAME = 'coskun-yayci-v2';
+const STATIC_CACHE = 'static-v2';
+const IMAGE_CACHE = 'images-v2';
 const API_CACHE = 'api-v1';
 
 // Static assets to cache on install
