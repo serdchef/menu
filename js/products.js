@@ -159,7 +159,7 @@ window.products = [
     id: 8, 
     name: "Midye", 
     price: "2.300,00 ₺", 
-    img: "img/midye.jpg", 
+    img: "img/midye_yeni.jpg", 
     desc: "Özel sarım midye şeklinde baklava, kıvamı yumuşak. El sanatının göstergesi.", 
     meta: "1 kg", 
 <<<<<<< HEAD
@@ -181,7 +181,7 @@ window.products = [
     id: 9, 
     name: "Burmalı", 
     price: "2.300,00 ₺", 
-    img: "img/burma_kadayif.jpg", 
+    img: "img/burmali.jpg", 
     desc: "Burma şeklinde sarılmış, çıtır kadayıf ve bol fıstık.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Kadayıf"],
@@ -290,7 +290,7 @@ window.products = [
     id: 14, 
     name: "Kuş Gözü", 
     price: "2.100,00 ₺", 
-    img: "img/yesil_midye.jpg", 
+    img: "img/kusgozu.jpg", 
     desc: "Kuş gözü şeklinde hazırlanan özel baklava. Yoğun fıstıklı.", 
     meta: "1 kg", 
 <<<<<<< HEAD
