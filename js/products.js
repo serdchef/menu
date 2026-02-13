@@ -12,7 +12,7 @@ window.products = [
     id: 1, 
     name: "Fıstıklı Baklava", 
     price: "1.800,00 ₺", 
-    img: "img/mekik_baklava.jpg", 
+    img: "img/mekikbaklava1.jpeg", 
     desc: "Bol Antep fıstığı ile hazırlanan klasik kare baklava. Geleneksel yöntemlerle, özenle hazırlanır.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Çok Satan"],
