@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 /**
-=======
-﻿/**
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
  * Coşkun Yaycı - Product Data
  * Güncel Fiyat Listesi - 2026
  */
@@ -16,17 +12,7 @@ window.products = [
     desc: "Bol Antep fıstığı ile hazırlanan klasik kare baklava. Geleneksel yöntemlerle, özenle hazırlanır.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Çok Satan"],
-<<<<<<< HEAD
     nutrition: { calories: "480 kcal", protein: "9g", fat: "26g", carbs: "54g", sugar: "36g" },
-=======
-    nutrition: {
-      calories: "480 kcal",
-      protein: "9g",
-      fat: "26g",
-      carbs: "54g",
-      sugar: "36g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -37,17 +23,7 @@ window.products = [
     desc: "Seçilmiş en kaliteli fıstıklarla hazırlanan özel üretim kare baklava. Premium kalite.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Özel Ürün"],
-<<<<<<< HEAD
     nutrition: { calories: "500 kcal", protein: "10g", fat: "28g", carbs: "54g", sugar: "38g" },
-=======
-    nutrition: {
-      calories: "500 kcal",
-      protein: "10g",
-      fat: "28g",
-      carbs: "54g",
-      sugar: "38g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -58,17 +34,7 @@ window.products = [
     desc: "İçinde bol ceviz ve nazikçe serbest bırakılan şerbet. Geleneksel havuç dilimi şeklinde.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Günlük Üretim"],
-<<<<<<< HEAD
     nutrition: { calories: "450 kcal", protein: "7g", fat: "22g", carbs: "58g", sugar: "38g" },
-=======
-    nutrition: {
-      calories: "450 kcal",
-      protein: "7g",
-      fat: "22g",
-      carbs: "58g",
-      sugar: "38g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -79,17 +45,7 @@ window.products = [
     desc: "El sarımı dolama, yoğun fıstıklı ve çıtır. Saray tatlılarının en özeli.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "El Yapımı"],
-<<<<<<< HEAD
     nutrition: { calories: "520 kcal", protein: "10g", fat: "30g", carbs: "54g", sugar: "40g" },
-=======
-    nutrition: {
-      calories: "520 kcal",
-      protein: "10g",
-      fat: "30g",
-      carbs: "54g",
-      sugar: "40g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -100,17 +56,7 @@ window.products = [
     desc: "Kaymak dolgulu, açık katlı şöbiyet. Geleneksel tarif, zengin içerik.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Kaymaklı"],
-<<<<<<< HEAD
     nutrition: { calories: "480 kcal", protein: "8g", fat: "26g", carbs: "56g", sugar: "40g" },
-=======
-    nutrition: {
-      calories: "480 kcal",
-      protein: "8g",
-      fat: "26g",
-      carbs: "56g",
-      sugar: "40g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -121,17 +67,7 @@ window.products = [
     desc: "İnce yapraklı, hafif ve çıtır şöbiyet. Zarif sunumuyla öne çıkar.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Zarif"],
-<<<<<<< HEAD
     nutrition: { calories: "470 kcal", protein: "7g", fat: "24g", carbs: "58g", sugar: "38g" },
-=======
-    nutrition: {
-      calories: "470 kcal",
-      protein: "7g",
-      fat: "24g",
-      carbs: "58g",
-      sugar: "38g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -142,17 +78,7 @@ window.products = [
     desc: "Taze ceviz içi ile hazırlanan ekonomik ve lezzetli baklava seçeneği.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Cevizli"],
-<<<<<<< HEAD
     nutrition: { calories: "440 kcal", protein: "8g", fat: "24g", carbs: "50g", sugar: "34g" },
-=======
-    nutrition: {
-      calories: "440 kcal",
-      protein: "8g",
-      fat: "24g",
-      carbs: "50g",
-      sugar: "34g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -162,19 +88,8 @@ window.products = [
     img: "img/midye_yeni.jpg", 
     desc: "Özel sarım midye şeklinde baklava, kıvamı yumuşak. El sanatının göstergesi.", 
     meta: "1 kg", 
-<<<<<<< HEAD
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Özel Ürün"],
     nutrition: { calories: "480 kcal", protein: "9g", fat: "26g", carbs: "54g", sugar: "38g" },
-=======
-    badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "El Yapımı"],
-    nutrition: {
-      calories: "480 kcal",
-      protein: "9g",
-      fat: "26g",
-      carbs: "54g",
-      sugar: "38g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -185,17 +100,7 @@ window.products = [
     desc: "Burma şeklinde sarılmış, çıtır kadayıf ve bol fıstık.", 
     meta: "1 kg", 
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Kadayıf"],
-<<<<<<< HEAD
     nutrition: { calories: "460 kcal", protein: "8g", fat: "24g", carbs: "56g", sugar: "36g" },
-=======
-    nutrition: {
-      calories: "460 kcal",
-      protein: "8g",
-      fat: "24g",
-      carbs: "56g",
-      sugar: "36g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -205,19 +110,8 @@ window.products = [
     img: "img/fistikli_kurabiye.jpg", 
     desc: "İçinde bol Antep fıstığı bulunan çıtır kurabiye. Geleneksel ev yapımı tarif.", 
     meta: "1 kg", 
-<<<<<<< HEAD
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Bol Fıstıklı"],
     nutrition: { calories: "520 kcal", protein: "10g", fat: "30g", carbs: "52g", sugar: "24g" },
-=======
-    badges: ["🚫 Glikozsuz", "Günlük üretim", "Bol Fıstıklı"],
-    nutrition: {
-      calories: "520 kcal",
-      protein: "10g",
-      fat: "30g",
-      carbs: "52g",
-      sugar: "24g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts", "egg"]
   },
   { 
@@ -227,19 +121,8 @@ window.products = [
     img: "img/tuzlu_fistik.jpg", 
     desc: "Özenle kavrulmuş, tuzlu atıştırmalık fıstık. Çerezlik.", 
     meta: "1 kg", 
-<<<<<<< HEAD
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Kavrulmuş"],
     nutrition: { calories: "580 kcal", protein: "20g", fat: "48g", carbs: "16g", sugar: "4g" },
-=======
-    badges: ["🚫 Glikozsuz", "Atıştırmalık", "Kavrulmuş"],
-    nutrition: {
-      calories: "580 kcal",
-      protein: "20g",
-      fat: "48g",
-      carbs: "16g",
-      sugar: "4g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["nuts"]
   },
   { 
@@ -249,19 +132,8 @@ window.products = [
     img: "img/su_boregi.jpg", 
     desc: "Klasik su böreği, ince yufka ve hafif tuzlu lezzet. Kahvaltılara yakışır.", 
     meta: "1 kg", 
-<<<<<<< HEAD
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Kahvaltılık"],
     nutrition: { calories: "340 kcal", protein: "12g", fat: "16g", carbs: "40g", sugar: "2g" },
-=======
-    badges: ["🚫 Glikozsuz", "Tuzlu", "Kahvaltılık"],
-    nutrition: {
-      calories: "340 kcal",
-      protein: "12g",
-      fat: "16g",
-      carbs: "40g",
-      sugar: "2g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "egg"]
   },
   { 
@@ -271,19 +143,8 @@ window.products = [
     img: "img/mekik_baklava.jpg", 
     desc: "Özel açma tekniğiyle hazırlanan, görsel şölen sunan baklava.", 
     meta: "1 kg", 
-<<<<<<< HEAD
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Görsellik"],
     nutrition: { calories: "470 kcal", protein: "8g", fat: "24g", carbs: "56g", sugar: "36g" },
-=======
-    badges: ["🚫 Glikozsuz", "Özel ürün", "🔥 Odun Ateşi", "Görsellik"],
-    nutrition: {
-      calories: "470 kcal",
-      protein: "8g",
-      fat: "24g",
-      carbs: "56g",
-      sugar: "36g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -293,19 +154,8 @@ window.products = [
     img: "img/kusgozu.jpg", 
     desc: "Kuş gözü şeklinde hazırlanan özel baklava. Yoğun fıstıklı.", 
     meta: "1 kg", 
-<<<<<<< HEAD
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Yoğun Fıstık"],
     nutrition: { calories: "490 kcal", protein: "9g", fat: "26g", carbs: "56g", sugar: "38g" },
-=======
-    badges: ["🚫 Glikozsuz", "Özel ürün", "🔥 Odun Ateşi", "Yoğun Fıstık"],
-    nutrition: {
-      calories: "490 kcal",
-      protein: "9g",
-      fat: "26g",
-      carbs: "56g",
-      sugar: "38g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -315,19 +165,8 @@ window.products = [
     img: "img/ozel_karisik.jpg", 
     desc: "Seçkin parçalarla hazırlanmış özel karışım. En iyiler bir arada.", 
     meta: "1 kg", 
-<<<<<<< HEAD
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Premium Seçim"],
     nutrition: { calories: "480 kcal", protein: "9g", fat: "26g", carbs: "54g", sugar: "38g" },
-=======
-    badges: ["🚫 Glikozsuz", "Özel ürün", "🔥 Odun Ateşi", "Premium Seçim"],
-    nutrition: {
-      calories: "480 kcal",
-      protein: "9g",
-      fat: "26g",
-      carbs: "54g",
-      sugar: "38g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   },
   { 
@@ -337,19 +176,8 @@ window.products = [
     img: "img/karisik.jpg", 
     desc: "Çeşitli baklava türlerinden oluşan ekonomik karışık kutu.", 
     meta: "1 kg", 
-<<<<<<< HEAD
     badges: ["🚫 Glikozsuz", "🔥 Odun Ateşi", "Çeşitli"],
     nutrition: { calories: "460 kcal", protein: "8g", fat: "24g", carbs: "56g", sugar: "36g" },
-=======
-    badges: ["🚫 Glikozsuz", "Hediyelik", "🔥 Odun Ateşi", "Çeşitli"],
-    nutrition: {
-      calories: "460 kcal",
-      protein: "8g",
-      fat: "24g",
-      carbs: "56g",
-      sugar: "36g"
-    },
->>>>>>> 704fdaf (Guncel fiyatlar - Odun atesi - Glikozsuz - 24 saat kargo)
     allergens: ["gluten", "dairy", "nuts"]
   }
 ];
